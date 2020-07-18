@@ -1,0 +1,454 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font: 16px "Montserrat", sans-serif;
+  margin: 0;
+  height: 3000px;
+}
+
+
+
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.header__left {
+  float: left;
+}
+
+.header__right {
+  float: right;
+}
+
+.header__logo {
+  color: white;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  margin-right: 26px;
+}
+
+.header__nav {
+  display: inline-block;
+}
+
+.header__nav ul {
+  list-style-type: none;
+}
+
+.header__nav ul li {
+  display: inline-block;
+  margin-right: 24px;
+}
+
+.header__nav ul li a {
+  color: white;
+}
+
+.header__nav ul li a:hover {
+  color: #ff4b64;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.header {
+  position: relative;
+  left: 0;
+  padding-top: 30px;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-image: url("../img/first-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 690px;
+ 
+}
+
+.header__login {
+  border-radius: 5px;
+  border: 1px solid #fff;
+  color: white;
+  height: 40px;
+  line-height: 40px;
+  padding: 8px 36px;
+  width: 120px;
+}
+
+.header__login:hover {
+  background-color: #ff4b64;
+}
+
+/* Styles for 1 section */
+
+.first {
+  overflow: hidden;
+  color: white;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  min-width: 1200px;
+ 
+}
+
+.first__heading {
+  font-size: 72px;
+  font-weight: 500;
+  letter-spacing: 1.8px;
+  margin-bottom: 0;
+  
+}
+
+.first__descr {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.75px;
+  
+}
+
+
+
+.first__form {
+  
+  font-size: 0;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 974px;
+  bottom:0px;
+}
+
+.first__form input {
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  font: 16px "Montserrat", sans-serif;
+  height: 55px;
+  padding-left: 30px;
+  width: 34%;
+}
+
+.first__form button:focus {
+  outline: none;
+}
+
+.first__form input:focus {
+  outline: none;
+}
+.first__form input::placeholder {
+  color: #818181;
+}
+
+.first__form .input__small {
+  width: 19%;
+}
+
+.first__form button {
+  background-color: #ff4b64;
+  border: none;
+  color: white;
+  cursor: pointer;
+  height: 55px;
+  font-size: 16px;
+  transition: background-color 0.2s;
+  vertical-align: top;
+  width: 12%;
+}
+
+.first__form button:hover {
+  background-color: white;
+  color: #ff4b64;
+  transition: background-color 0.2s;
+}
+
+/* 2 section with flights */
+
+.flights { 
+  margin-top: 80px;
+  margin-bottom: 30px;
+   
+}
+
+.flights__heading {
+  color: #484848;
+  float: left;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.flights__links {
+  float: right;
+}
+
+.flights__links ul {
+  list-style-type: none;
+}
+
+.flights__links ul li {
+  display: inline-block;
+}
+
+.flights__links ul li a {
+  color: #484848;
+  font-weight: 400;
+  margin-left: 30px;
+}
+
+.flights__links ul li a:hover {
+  color: #ff4b64;
+}
+
+/* Flights table */
+
+.table {
+  width: 100%;
+  margin-bottom: 40px;
+  
+
+}
+
+table {
+  text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+
+}
+
+
+.table table thead  {
+  color: #484848;
+  font-size: 16px;
+  font-weight: 700;
+  border-bottom: 1px solid #e6e6e6;
+
+  }
+
+
+.table table thead tr td {
+  padding-bottom: 34px;
+  
+}
+
+
+.table table thead tr td:last-child {
+  padding-left: 60px;
+
+}
+
+.table table thead tr td:first-child {
+  padding-right: 80px;
+  text-align: left;
+
+}
+.table table tbody tr td {
+
+  padding: 45px 0;
+  border-bottom: 1px solid #e6e6e6;
+  
+}
+
+.table table tbody tr td {
+
+color: #484848;
+font-size: 16px;
+font-weight: 400;
+
+}
+
+.table table tbody tr td span {
+
+color: #9a9a9a;
+font-size: 16px;
+font-weight: 400;
+display: block;
+margin-top: 15px;
+
+}
+
+.price_button {
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+ border: 1px solid #ff4b64;
+ background-color: transparent;
+ color: #ff4b64;
+font-size: 16px;
+font-weight: 500;
+cursor: pointer;
+
+}
+
+.price_button:hover {
+background-color:  #ff4b64;
+color: white;
+
+}
+
+.table table tbody tr td img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+  
+}
+
+.td__text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.table table tbody tr td:last-child {
+  padding-left: 60px;
+  
+}
+
+.table table tbody tr td:first-child {
+  padding-right: 80px;
+  text-align: left;
+
+}
+
+.table__down, .hotels__down {
+text-align: right;
+
+
+}
+.table__down a, .hotels__down a{
+color: #484848;
+font-size: 16px;
+font-weight: 500;
+
+}
+
+.table__down a:hover, .hotels__down a:hover {
+  color: #ff4b64;
+  
+}
+/* Hotels */
+
+.hotels {
+  margin-top: 20px;
+}
+
+.hotels_heading{
+  display: block;
+  color: #484848;
+  font-size: 30px;
+  font-weight: 400;
+ 
+}
+.hotels_list ul {
+  list-style-type: none;
+  
+}
+
+.hotels_list ul li {
+  display: inline-block;
+}
+
+.hotels_list ul li a {
+  color: #484848;
+  font-weight: 400;
+  margin-left: 30px;
+}
+
+.hotels_list ul li a:hover {
+  color: #ff4b64;
+}
+
+
+.hotels_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+
+.hotel_card {
+  display: inline-block;
+  border: 1px solid #e6e6e6;
+  width: 31%;
+  margin-bottom: 25px;
+  margin-right: 22px;
+  font-family: "Montserrat" sans-serif;
+
+}
+
+.hotel_card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.card_features {
+  display: flex;
+  justify-content: space-between;
+  color: #9a9a9a;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 15px 0;
+}
+
+.card_text {
+  padding: 20px 15px;
+
+}
+.card_img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.hotels_cards {
+  margin-bottom: 30px;
+}
+
+.footer_column {
+  display: inline-block;
+  width: 22%;
+  margin-top: 50px;
+  text-align: left;
+  vertical-align: top;
+ 
+}
+
+.column_heading {
+
+color: #484848;
+font-size: 30px;
+font-weight: 400;
+margin-bottom: 50px;
+
+}
+
+.footer_menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer_menu ul li {
+  margin-bottom: 20px;
+}
+.footer_menu ul li a {
+color: #484848;
+font-size: 16px;
+font-weight: 400;
+
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+}
